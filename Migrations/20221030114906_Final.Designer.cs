@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Olaeriu_Teodora_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Olaeriu_Teodora_Lab2.Data;
 namespace Olaeriu_Teodora_Lab2.Migrations
 {
     [DbContext(typeof(Olaeriu_Teodora_Lab2Context))]
-    partial class Olaeriu_Teodora_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20221030114906_Final")]
+    partial class Final
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
