@@ -12,8 +12,8 @@ using Olaeriu_Teodora_Lab2.Data;
 namespace Olaeriu_Teodora_Lab2.Migrations
 {
     [DbContext(typeof(Olaeriu_Teodora_Lab2Context))]
-    [Migration("20221025150421_BookCategory")]
-    partial class BookCategory
+    [Migration("20221101120824_migrarefinalaaa")]
+    partial class migrarefinalaaa
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,11 +53,11 @@ namespace Olaeriu_Teodora_Lab2.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
-                    b.Property<decimal?>("AuthorID")
-                        .HasColumnType("decimal(6,2)");
+                    b.Property<int?>("AuthorID")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(6,2)");
 
                     b.Property<int?>("PublisherID")
                         .HasColumnType("int");
